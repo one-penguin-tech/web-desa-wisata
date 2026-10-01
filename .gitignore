@@ -1,0 +1,22 @@
+# Playwright MCP scratch output
+.playwright-mcp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local env
+.env
+.env.*
+notes/
