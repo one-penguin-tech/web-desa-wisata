@@ -6,6 +6,7 @@
 <title>Ruang Komunitas | Forkom Deswita Bogor</title>
 <meta name="description" content="Webinar, pelatihan, dan pojok aspirasi komunitas desa wisata Bogor.">
 <meta name="color-scheme" content="light dark">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("forkom-theme")==="dark"?"dark":"light"}catch(e){document.documentElement.dataset.theme="light"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
@@ -17,9 +18,12 @@
  <div class="wrap nav">
   <a class="brand" href="index.html"><b>Forkom Deswita</b><span>Kabupaten Bogor</span></a>
   <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Buka menu">
-  <label for="nav-toggle" class="nav-burger" aria-hidden="true"><i class="ph ph-list"></i></label>
-  <ul class="nav-links"><li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil</a></li><li><a href="desa-wisata.html">Desa Wisata</a></li><li><a href="budaya.html">Budaya</a></li><li><a href="paket-wisata.html">Paket Wisata</a></li><li><a href="event.html">Event &amp; Festival</a></li><li><a href="komunitas.html" aria-current="page">Ruang Komunitas</a></li></ul>
-  <a class="btn btn-primary nav-cta" href="https://wa.me/6282321500629?text=Halo%20Admin%20Forkom%20Deswita%2C%20saya%20ingin%20bergabung%20dengan%20forum." target="_blank" rel="noopener">Gabung Forum</a>
+ <ul class="nav-links"><li><a href="index.html">Beranda</a></li><li><a href="profil.html">Profil</a></li><li><a href="desa-wisata.html">Desa Wisata</a></li><li><a href="budaya.html">Budaya</a></li><li><a href="paket-wisata.html">Paket Wisata</a></li><li><a href="event.html">Event &amp; Festival</a></li><li><a href="komunitas.html" aria-current="page">Ruang Komunitas</a></li></ul>
+  <div class="nav-actions">
+   <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Ganti tema terang atau gelap"><i class="ph ph-moon"></i><i class="ph ph-sun"></i></button>
+   <a class="btn btn-primary nav-cta" href="https://wa.me/6282321500629?text=Halo%20Admin%20Forkom%20Deswita%2C%20saya%20ingin%20bergabung%20dengan%20forum." target="_blank" rel="noopener">Gabung Forum</a>
+   <label for="nav-toggle" class="nav-burger" aria-hidden="true"><i class="ph ph-list"></i></label>
+  </div>
  </div>
 </header>
 <main>

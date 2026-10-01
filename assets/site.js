@@ -1,5 +1,19 @@
 (function(){
   document.documentElement.classList.add('js');
+  // theme toggle: light by default, choice kept in localStorage
+  var tt=document.getElementById('theme-toggle');
+  if(tt){
+    var root=document.documentElement;
+    var sync=function(){tt.setAttribute('aria-pressed',root.dataset.theme==='dark')};
+    sync();
+    tt.addEventListener('click',function(){
+      var next=root.dataset.theme==='dark'?'light':'dark';
+      root.dataset.theme=next;
+      try{localStorage.setItem('forkom-theme',next)}catch(e){}
+      sync();
+    });
+  }
+
   var els=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
